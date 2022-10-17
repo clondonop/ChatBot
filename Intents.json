@@ -1,0 +1,32 @@
+
+{"intents": [
+    {"tag": "Saludo",
+     "patterns": ["Hola", "Holi", "Buenos dias", "Buenas Tardes", "Buenas noches","Buenas"],
+     "responses": ["Hola", "Como se encuentra?", "Saludos"]
+    },
+    {"tag": "Despedida",
+     "patterns": ["Adios", "Hasta luego", "Chao"],
+     "responses": ["Adios", "Que tenga un buen dia", "Hasta luego"]
+    },
+    {"tag": "Gracias",
+     "patterns": ["Gracias", "Muchas gracias", "Eso fue de ayuda", "Gracias por la ayuda"],
+     "responses": ["Feliz de ayudar", "Con gusto", "Fue un placer", "Con mucho gusto"]
+    },
+    {"tag": "Info",
+     "patterns": ["Quien eres?", "Que eres?", "Con quien hablo?" ],
+     "responses": ["I.m Joana, el bot que te ayuda", "I'm Joana, un bot de inteligencia artificial"]
+    },
+    {"tag": "help",
+    "patterns": ["Podrias ayudarme?", "Ayudame", "Que puedes hacer por mi"],
+    "responses": ["Dime como puedo ayudarte", "Cual es tu problema", "Claro, como te puedo ayudar"]
+    },
+    {"tag": "PedirCita",
+    "patterns": ["Necesito una cita", "Dame una cita", "Quiero pedir una cita", "Me puedes dar una cita", "Quiero una cita"],
+    "responses": ["Regalame los siguientes datos", "Continua escribiendo los siguientes datos en el chat"]
+    },
+    {"tag": "CancelarCita",
+    "patterns": ["Quiero cancelar una cita", "Cancelar cita", "Deseo cancelar mi cita"],
+    "responses": ["Claro dame tu numero de identificacion", "Cual es tu numero de identificacion para proceder"]
+    }
+]
+}
