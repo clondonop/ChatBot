@@ -9,6 +9,7 @@ import colorama
 colorama.init()
 from colorama import Fore, Style, Back
 from chatbot.functions.Chatbot.create_event import *
+from chatbot.functions.Chatbot.delete_event import *
 import pickle
 import json 
 import numpy as np 
@@ -96,9 +97,10 @@ def chat(msj):
             cedula,nombre,correo,numero,fecha,hora = msj.split(',')
             fecha2=datetime.datetime.strptime(fecha.strip(), '%d/%m/%Y')
             hora2=datetime.datetime.strptime(hora.strip(), '%H:%M')  
-            print(fecha2)
+            print("en msj",fecha2)
             create(fecha2,hora2,cedula,numero,correo,nombre)
-
+      
+        if msj.isdigit() and tag== "CancelarCita":    
+            respuesta = delete(msj.strip())
+            
         return respuesta
-       
-
